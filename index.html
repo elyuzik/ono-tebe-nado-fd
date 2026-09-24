@@ -9,49 +9,55 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
+  <header class="header">
+    <nav class="header_menu-list">
+      <ul class="header_link-list">
+        <li class="header__link_active header__links-list-item_no-bullit">
+          главная
+        </li>  
+        <li class="header_link">
+          <a href="#0">посмотреть лоты</a>
+        </li>
+        <li class="header_link">
+          <a href="#0">об аукционе</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header_logo">
+      <img src="./images/logo-black.svg" alt="Логотип">
+    </a>
+    <address class="header_adress">
+        <a href="tel:+99995555555">
+        +9 999 555 5555
+        </a>
+        <a href="mailto:info@sobaka.ge">
+        info@sobaka.ge
+        </a>
+        <div>
+        наб. Принсенграхт 263-
+        265, Амстердам
+        </div>
+    </address>
+  </header>
   <body>
-    <header class="header">
-      <nav class="header_menu">
-        <ul class="header_link-list header_link-item">
-          <li>
-            главная
-          </li>
-          <li class="header_link">
-            посмотреть лоты
-          </li>
-          <li class="header_link">
-            об аукционе
-          </li>
-        </ul>
-      </nav>
-      <a class="header_logo">
-        <img class="header_logo-image" src="/images/logo-black.svg" alt="Логотип">
-      </a>
-      <address class="header_adress">
-        <a href="+9 999 555 5555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <div>наб. Принсенграхт 263-
-          265, Амстердам</div>
-      </address>
-    </header>
-      <main>
-        <section class="cover">
-          <img class="overlay" src="./images/cover.jpg" alt="картина цветы лотуса">
-          <h1 class="main-title">
-            <span>
-              ОНО
+    <main>
+      <section class="cover">
+          <h1 class="main_title">
+          <div class="overlay">
+            <span class="text_ono">
+              оно
             </span>
-            <span>
-              ТЕБЕ
+            <span class="text_tebe">
+              тебе
             </span>
-            <span>
-              НАДО
+            <span class="text_nado">
+              надо
             </span>
-          </h1>
-          <div class="description">
-            <p>акцион вещей. в которые никто не верил <button>сделать ставку</button></p>
-          </div>
-        </section>
+        </h1>
+        <div class="description">
+          <p>акцион вещей. в которые никто не верил <button>сделать ставку</button></p>
+        </div>
+      </section>
         <section class="lots">
           <h2 class="title">лоты</h2>
           <ul class="lots">
@@ -126,14 +132,15 @@
           </div>
         </section>
       </main>
-    <footer class="footer">
-      <div class="footer_about">
-        <address">
-          <a href="+9 999 555 5555">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <div>наб. Принсенграхт 263-
-          265, Амстердам</div>
-        </address>
+      </body>   
+      <footer class="footer">
+        <div class="footer_about">
+          <address">
+            <a href="+9 999 555 5555">+9 999 555 5555</a>
+            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+            <div>наб. Принсенграхт 263-
+            265, Амстердам</div>
+          </address>
           <nav class="social_footer">
             <ul>
               <li>
@@ -142,7 +149,5 @@
             </ul>
           </nav>
         </div>
-      </div>
-    </footer>
-  </body>
+      </footer>
 </html>

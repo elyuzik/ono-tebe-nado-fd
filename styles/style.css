@@ -2,13 +2,13 @@ header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     justify-content: center;
-    padding: 162px 50px 96px 50px;
+    padding: 161px 49px 96px 51px;
 }
 /* Меню главной страницы */
 .header_menu-list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 18px;
 }
 
@@ -19,13 +19,15 @@ header {
 
 .header_link-list {
     display: flex;
-    gap: 24px;
+    justify-items: center;
+    gap: 16px;
     list-style: circle;
 }
 
 .header_link_active {
     text-decoration: none;
 }
+
 .header__links-list-item_no-bullit {
     list-style:none
 }
@@ -59,24 +61,84 @@ header {
 
 /* Обложка страницы (входная секция) */
 .cover {
-    min-height: min-content;
     position: relative;
+    min-height: min-content;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
 .overlay {
-    background-color: rgb(0, 0, 0, 0.5);
-    background-image: url(/images/cover.jpg);
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-.main_title {
-    text-transform: lowercase;
-    font-weight: bold;
-    font-size: 100px;
-    color: #fff;
-    letter-spacing: 30%;
+.cover__title {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: space-between;
+    min-height: 757px;
+    padding: 50px;
 }
 
+.aligned-text {
+    text-transform:uppercase;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+    margin-top: 122px;
+    z-index: 3;
+}
 
+.aligned-text span {
+    display: block;
+}
 
+.aligned_text-left {
+    text-align: left;
+}
+
+.aligned_text-center {
+    text-align: center;
+    margin-top: 36px;
+    margin-left: 26px;
+}
+
+.aligned_text-right {
+    text-align: right;
+    margin-top: 34px;
+    margin-right: -29px;
+}
+
+/* Нижняя часть описание + кнопка */
+.cover_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.cover__description-text {
+    display: flex;
+    flex-direction: row;
+    word-spacing: 23px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.bet_button {
+    color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 13px 32px;
+    font-size: 22px;
+}

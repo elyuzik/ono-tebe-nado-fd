@@ -1,8 +1,8 @@
-header {
+.header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     justify-content: center;
-    padding: 161px 49px 96px 51px;
+    padding: 156px 49px 100px 51px;
     margin-top: -2px;
 }
 /* Меню главной страницы */
@@ -13,11 +13,6 @@ header {
     font-size: 18px;
 }
 
-.header_link-list a {
-    text-decoration: none;
-    border-bottom: 2px solid #000;
-}
-
 .header_link-list {
     display: flex;
     justify-items: center;
@@ -25,8 +20,13 @@ header {
     list-style: circle;
 }
 
-.header_link_active {
+.header__link_active {
     text-decoration: none;
+}
+
+.header_link {
+    text-decoration: none;
+    border-bottom: 2px solid #000;
 }
 
 .header__links-list-item_no-bullit {
@@ -41,17 +41,14 @@ header {
 
 /* Номер телефона и адресс */
 .header_adress {
-    max-width: 240px;
+    display: flex;
     justify-self: end;
     justify-content: center;
-    font-style: normal;
-    font-size: 18px;
-}
-
-.header_adress {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 240px;
+    font-style: normal;
+    font-size: 18px;
 }
 
 .header_adress a {
@@ -230,7 +227,6 @@ p {
     align-items: flex-start;
     gap: 72px;
     max-width: 1200px;
-    margin: 0 auto; 
     padding: 24px 24px;
     padding-top: 153px;
     padding-left: 72px;
@@ -266,7 +262,6 @@ p {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0;
 }
 
 .about__text {
@@ -277,9 +272,68 @@ p {
 
 .about__text p {
     text-align: left;
-    margin: 0;
-    font-size: 20px;
 }
+
+/* Подвал сайта */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer_adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    max-width: 240px;
+}
+
+.contact_email-adress {
+    display: flex;
+    align-self: flex-start;
+}
+
+.footer_adress a {
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+}
+
+/* Подвал с ссылками */
+.footer__menu {
+    font-size: 18px;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__menu-link {
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+}
+
+/* Социальные сети */
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 48px;
+    object-fit: contain;
+}
+
+.footer__social-list-item {
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
 
 
 

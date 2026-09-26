@@ -3,6 +3,7 @@ header {
     grid-template-columns: 1fr min-content 1fr;
     justify-content: center;
     padding: 161px 49px 96px 51px;
+    margin-top: -2px;
 }
 /* Меню главной страницы */
 .header_menu-list {
@@ -20,7 +21,7 @@ header {
 .header_link-list {
     display: flex;
     justify-items: center;
-    gap: 16px;
+    gap: 32px;
     list-style: circle;
 }
 
@@ -80,6 +81,7 @@ header {
 }
 
 .cover__title {
+    position: relative;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -141,4 +143,66 @@ header {
     border: 2px solid #fff;
     padding: 13px 32px;
     font-size: 22px;
+}
+
+/* Заголовок h2*/
+.lots__heading {
+    font-weight: bold;
+    font-size: 49px;
+    padding: 169px;
+    padding-left: 64px;
+    padding-bottom: 26px;
+}
+
+/* Лоты с карточками */
+.lots {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 0 24px 0 24px;
+}
+
+.card_type_film {
+    position: relative;
+} 
+
+
+article a {
+    height: 100%;
+    list-style: none;
+}
+
+.card-link {
+    color: #fff;
+    width: 334px;
+    min-height: 596px;
+}
+
+.card_title-link {
+    height: 100%;
+}
+
+.card_type_film {
+    background-image: url(/images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 334px;
+    min-height: 596px;
+}
+
+
+.card_type_book {
+    background-image: url(/images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 334px;
+    min-height: 596px;
+}
+
+.card_type_picture {
+    background-image: url(/images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 334px;
+    min-height: 596px;
 }

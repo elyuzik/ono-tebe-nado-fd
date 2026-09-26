@@ -146,9 +146,7 @@ header {
 .lots__heading {
     font-weight: bold;
     font-size: 49px;
-    padding: 169px;
-    padding-left: 64px;
-    padding-bottom: 26px;
+    padding: 169px 0 26px 64px;
 }
 
 /* Лоты с карточками */
@@ -175,6 +173,10 @@ article a {
     color: #fff;
     width: 334px;
     min-height: 596px;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card_title-link {
@@ -204,3 +206,19 @@ article a {
     background-position: center;
 }
 
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.lots__look-more-link {
+    font-size: 20px;
+    padding-left: 62px;
+    padding-top: 33px;
+}

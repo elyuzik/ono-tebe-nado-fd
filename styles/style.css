@@ -72,10 +72,7 @@ header {
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: rgb(0, 0, 0, 0.5);
     z-index: 1;
 }
@@ -162,9 +159,11 @@ header {
     margin: 0 24px 0 24px;
 }
 
-.card_type_film {
+
+.lots__card-list {
     position: relative;
-} 
+    z-index: 2;
+}
 
 
 article a {
@@ -184,25 +183,24 @@ article a {
 
 .card_type_film {
     background-image: url(/images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 334px;
-    min-height: 596px;
 }
 
 
 .card_type_book {
     background-image: url(/images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 334px;
-    min-height: 596px;
 }
 
 .card_type_picture {
     background-image: url(/images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
+}
+
+.card_type_film,
+.card_type_book,
+.card_type_picture {
+    position: relative;
     width: 334px;
     min-height: 596px;
+    background-size: cover;
+    background-position: center;
 }
+

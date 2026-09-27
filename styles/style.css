@@ -136,7 +136,7 @@
 .bet_button {
   color: transparent;
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid;
   padding: 13px 32px;
   font-size: 22px;
 }

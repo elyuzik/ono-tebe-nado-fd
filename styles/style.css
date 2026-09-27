@@ -1,339 +1,336 @@
 .header {
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    justify-content: center;
-    padding: 156px 49px 100px 51px;
-    margin-top: -2px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-content: center;
+  padding: 156px 49px 100px 51px;
+  margin-top: -2px;
 }
 /* Меню главной страницы */
 .header_menu-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
 }
 
 .header_link-list {
-    display: flex;
-    justify-items: center;
-    gap: 32px;
-    list-style: circle;
+  display: flex;
+  justify-items: center;
+  gap: 32px;
+  list-style: circle;
 }
 
 .header__link_active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header_link {
-    text-decoration: none;
-    border-bottom: 2px solid #000;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
 }
 
+
+
 .header__links-list-item_no-bullit {
-    list-style:none
+  list-style:none
 }
 
 /* Логотип */
 .header_logo {
-    width: 140px;
-    height: 105px;
+  width: 140px;
+  height: 105px;
 }
 
 /* Номер телефона и адресс */
 .header_adress {
-    display: flex;
-    justify-self: end;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 240px;
-    font-style: normal;
-    font-size: 18px;
+  display: flex;
+  justify-self: end;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  font-style: normal;
+  font-size: 18px;
 }
 
 .header_adress a {
-    text-decoration: none;
-    border-bottom: 2px solid #000;
-    justify-content: center;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  justify-content: center;
 }
 
 /* Обложка страницы (входная секция) */
 .cover {
-    position: relative;
-    min-height: min-content;
-    background-image: url(/images/cover.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+  position: relative;
+  min-height: min-content;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 .overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgb(0, 0, 0, 0.5);
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .cover__title {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    justify-content: space-between;
-    min-height: 757px;
-    padding: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  justify-content: space-between;
+  min-height: 757px;
+  padding: 50px;
 }
 
 .aligned-text {
-    text-transform:uppercase;
-    font-weight: bold;
-    line-height: 1;
-    font-size: 100px;
-    letter-spacing: 0.3em;
-    margin-top: 122px;
-    z-index: 3;
+  text-transform:uppercase;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  margin-top: 122px;
+  z-index: 3;
 }
 
 .aligned-text span {
-    display: block;
+  display: block;
 }
 
 .aligned_text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .aligned_text-center {
-    text-align: center;
-    margin-top: 36px;
-    margin-left: 26px;
+  text-align: center;
+  margin-top: 36px;
+  margin-left: 26px;
 }
 
 .aligned_text-right {
-    text-align: right;
-    margin-top: 34px;
-    margin-right: -29px;
+  text-align: right;
+  margin-top: 34px;
+  margin-right: -29px;
 }
 
 /* Нижняя часть описание + кнопка */
 .cover_description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    text-transform: uppercase;
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  text-transform: uppercase;
+  z-index: 1;
 }
 .cover__description-text {
-    display: flex;
-    flex-direction: row;
-    word-spacing: 23px;
-    font-size: 21px;
-    color: #fff;
+  display: flex;
+  flex-direction: row;
+  word-spacing: 23px;
+  font-size: 21px;
+  color: #fff;
 }
 
 .bet_button {
-    color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 13px 32px;
-    font-size: 22px;
+  color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 13px 32px;
+  font-size: 22px;
 }
 
 /* Заголовок h2*/
 .lots__heading {
-    font-weight: bold;
-    font-size: 49px;
-    padding: 169px 0 26px 64px;
+  font-weight: bold;
+  font-size: 49px;
+  padding: 169px 0 26px 64px;
 }
 
 /* Лоты с карточками */
 .lots {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    margin: 0 24px 0 24px;
-    padding-bottom: 31px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin: 0 24px 0 24px;
+  padding-bottom: 31px;
 }
 
 
 .lots__card-list {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 
 article a {
-    height: 100%;
-    list-style: none;
+  height: 100%;
+  list-style: none;
 }
 
 .card-link {
-    color: #fff;
-    width: 334px;
-    min-height: 596px;
-    padding: 48px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  color: #fff;
+  width: 334px;
+  min-height: 596px;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card_title-link {
-    height: 100%;
+  height: 100%;
 }
 
 .card_type_film {
-    background-image: url(/images/card-lot-01.jpg);
+  background-image: url(/images/card-lot-01.jpg);
 }
 
 
 .card_type_book {
-    background-image: url(/images/card-lot-02.jpg);
+  background-image: url(/images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    background-image: url(/images/card-lot-03.jpg);
+  background-image: url(/images/card-lot-03.jpg);
 }
 
 .card_type_film,
 .card_type_book,
 .card_type_picture {
-    position: relative;
-    width: 334px;
-    min-height: 596px;
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  width: 334px;
+  min-height: 596px;
+  background-size: cover;
+  background-position: center;
 }
 
 h3 {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 20px;
-    line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .lots__look-more-link {
-    font-size: 20px;
-    padding-left: 64px;
+  font-size: 20px;
+  padding-left: 64px;
 }
 
 /* Секция с описанием аукциона */
 .about {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 72px;
-    max-width: 1200px;
-    padding: 24px 24px;
-    padding-top: 153px;
-    padding-left: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 72px;
+  max-width: 1200px;
+  padding: 153px 24px 182px 72px;;
 }
 
 .about__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 240px;
-    height: 240px;
-    background-color: #000;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
 }
 
 .about__content {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    flex: 1;
-    min-width: 0;
-    padding-top: 101px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  flex: 1;
+  min-width: 0;
+  padding-top: 101px;
 }
 
 .about__logo-image {
-    width: 60%;
-    height: 60%;
-    object-fit: contain;
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
 
 .about__title {
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .about__text {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .about__text p {
-    text-align: left;
+  text-align: left;
 }
 
 /* Подвал сайта */
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 115px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .footer_adress {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    font-size: 18px;
-    font-style: normal;
-    max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  max-width: 240px;
 }
 
 .contact_email-adress {
-    display: flex;
-    align-self: flex-start;
+  display: flex;
+  align-self: flex-start;
 }
 
 .footer_adress a {
-    text-decoration: none;
-    border-bottom: 2px solid #000;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
 }
 
 /* Подвал с ссылками */
 .footer__menu {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .footer__menu-link_active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer__menu-link {
-    text-decoration: none;
-    border-bottom: 2px solid #000;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
 }
 
 /* Социальные сети */
 .footer__social-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 48px;
-    object-fit: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 48px;
+  object-fit: contain;
 }
 
 .footer__social-list-item {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
-
-
-
-
 
 
 

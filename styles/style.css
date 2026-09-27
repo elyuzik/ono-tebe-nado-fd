@@ -134,7 +134,6 @@
 .cover__description-text {
   display: flex;
   font-size: 22px;
-  color: #fff;
   word-spacing: 18px;
 }
 
@@ -148,7 +147,7 @@
 }
 
 .lots__heading {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
     padding-left: 40px;
@@ -161,7 +160,6 @@
 }
 
 .lots__heading {
-  font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   padding-left: 40px;
